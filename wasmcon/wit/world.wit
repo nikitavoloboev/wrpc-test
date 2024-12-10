@@ -1,0 +1,13 @@
+package wasmcon:blue;
+
+interface green {
+    greet: func(name: string) -> string;
+}
+
+world client {
+    import green;
+}
+
+world server {
+    export green;
+}
